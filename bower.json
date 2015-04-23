@@ -1,0 +1,21 @@
+{
+  "name": "testem-mocha-require",
+  "version": "0.0.0",
+  "homepage": "https://github.com/noyesa/testem-mocha-require",
+  "authors": [
+    "Andrew Noyes <anoyes@slideshare.com>"
+  ],
+  "description": "Testem example with requirejs, mocha, sinon, and chai",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "sinon": "http://sinonjs.org/releases/sinon-1.14.1.js"
+  }
+}

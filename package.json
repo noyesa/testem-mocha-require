@@ -1,0 +1,21 @@
+{
+  "name": "testem-mocha-require",
+  "version": "0.0.0",
+  "description": "Example project of mocha with require, sinon, and chai",
+  "scripts": {
+    "test": "testem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noyesa/testem-mocha-require"
+  },
+  "author": "Andrew Noyes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noyesa/testem-mocha-require/issues"
+  },
+  "homepage": "https://github.com/noyesa/testem-mocha-require",
+  "devDependencies": {
+    "testem": "^0.8.2"
+  }
+}
