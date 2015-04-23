@@ -4,5 +4,13 @@ define(function() {
     this.lastName = lastName;
   };
 
+  Object.defineProperties(Person.prototype, {
+    fullName: {
+      get: function() {
+        return this.firstName + ' ' + this.lastName;
+      }
+    }
+  });
+
   return Person;
 });

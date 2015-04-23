@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Test'em</title>
+    {{! require must come before chai and sinon in order for them to register as AMD modules. !}}
     <script type="text/javascript" src="../bower_components/requirejs/require.js"></script>
     <script type="text/javascript" src="/testem/mocha.js"></script>
     <script type="text/javascript" src="/testem/chai.js"></script>
