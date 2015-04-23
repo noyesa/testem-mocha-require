@@ -10,24 +10,27 @@ define(['chai', '../src/person'], function(chai, Person) {
     describe('firstName', function() {
       it('has a firstName property', function() {
         var andrew = new Person('Andrew', 'Noyes');
-        expect(andrew).to.have.property('firstName');
-        expect(andrew.firstName).to.equal('Andrew');
+        expect(andrew)
+          .to.have.property('firstName')
+          .that.equals('Andrew');
       });
     });
 
     describe('lastName', function() {
       it('has a lastName property', function() {
         var andrew = new Person('Andrew', 'Noyes');
-        expect(andrew).to.have.property('lastName');
-        expect(andrew.lastName).to.equal('Noyes');
+        expect(andrew)
+          .to.have.property('lastName')
+          .that.equals('Noyes');
       });
     });
 
     describe('fullName', function() {
       it('has a "fullName" property', function() {
         var andrew = new Person('Andrew', 'Noyes');
-        expect(andrew).to.have.property('fullName');
-        expect(andrew.fullName).to.equal('Andrew Noyes');
+        expect(andrew)
+          .to.have.property('fullName')
+          .that.equals('Andrew Noyes');
       });
     });
   });
