@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test'em</title>
+    <script type="text/javascript" src="../bower_components/requirejs/require.js"></script>
+    <script type="text/javascript" src="/testem/mocha.js"></script>
+    <script type="text/javascript" src="/testem/chai.js"></script>
+    <script type="text/javascript" src="../bower_components/sinon/index.js"></script>
+    <script type="text/javascript" src="/testem.js"></script>
+
+    <link rel="stylesheet" href="/testem/mocha.css">
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script type="text/javascript">
+      var files = [];
+      {{#serve_files}}
+        files.push('../{{{src}}}');
+      {{/serve_files}}
+      mocha.setup('bdd');
+      require(files, mocha.run);
+    </script>
+  </body>
+</html>

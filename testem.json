@@ -1,0 +1,5 @@
+{
+  "test_page": "tests/require-mocha-sinon-chai.mustache",
+  "launch_in_dev": ["Chrome", "Firefox"],
+  "src_files": ["tests/**/*.spec.js"]
+}
